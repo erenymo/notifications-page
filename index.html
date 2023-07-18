@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Project</title>
+    <link rel="stylesheet" href="./output/tailwind.css" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="script.js"></script>
+  </head>
+  <body
+    class="min-h-screen flex justify-center items-center font-primary bg-body"
+  >
+    <!--global container-->
+    <div class="p-4 bg-white rounded-lg">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center gap-2">
+          <h1 class="font-bold text-xl">Notifications</h1>
+          <h2
+            class="notification__counter bg-midnightBlue text-white px-2 rounded-lg"
+          >
+            3
+          </h2>
+        </div>
+        <button class="btn btn__mark-all text-base text-grayishBlue">
+          Mark all as read
+        </button>
+      </div>
+
+      <!-- Notifications Container-->
+      <div class="notifications__container flex flex-col mt-6 gap-2 max-w-2xl">
+        <!-- Notification 1-->
+        <div
+          class="notification notification__unread hover:cursor-pointer bg-veryLightGrayishBlue rounded-lg py-3 px-6 flex gap-4 items-center"
+        >
+          <img
+            class="w-10 h-10"
+            src="images/avatar-mark-webber.webp"
+            alt="user profile picture"
+          />
+          <div class="text-grayishBlue">
+            <p class="notification__text">
+              <em
+                class="not-italic font-bold text-veryDarkBlue hover:text-midnightBlue"
+                >Mark Webber</em
+              >
+              reacted to your recent post
+              <em
+                class="not-italic font-bold hover:text-midnightBlue text-darkGrayishBlue"
+              >
+                My first tournament today!</em
+              >
+              <em class="unread__dot text-xs not-italic"> 🔴</em>
+            </p>
+            <p class="">1m ago</p>
+          </div>
+        </div>
+
+        <!-- Notification 2-->
+        <div
+          class="notification notification__unread hover:cursor-pointer bg-veryLightGrayishBlue rounded-lg py-3 px-6 flex gap-4 items-center"
+        >
+          <img
+            class="w-10 h-10"
+            src="images/avatar-angela-gray.webp"
+            alt="user profile picture"
+          />
+          <div class="text-grayishBlue">
+            <p class="notification__text">
+              <em
+                class="not-italic font-bold text-veryDarkBlue hover:text-midnightBlue"
+                >Angela Gray</em
+              >
+              followed you !
+              <em class="unread__dot text-xs not-italic"> 🔴</em>
+            </p>
+            <p class="">5m ago</p>
+          </div>
+        </div>
+
+        <!-- Notification 3-->
+        <div
+          class="notification notification__unread hover:cursor-pointer bg-veryLightGrayishBlue rounded-lg py-3 px-6 flex gap-4 items-center"
+        >
+          <img
+            class="w-10 h-10"
+            src="images/avatar-jacob-thompson.webp"
+            alt="user profile picture"
+          />
+          <div class="text-grayishBlue">
+            <p class="notification__text">
+              <em
+                class="not-italic font-bold text-veryDarkBlue hover:text-midnightBlue"
+                >Jacob Thompson</em
+              >
+              has joined your group
+              <em class="not-italic font-bold text-midnightBlue">
+                Chess Club</em
+              >
+              <em class="unread__dot text-xs not-italic"> 🔴</em>
+            </p>
+            <p class="">1 day ago</p>
+          </div>
+        </div>
+
+        <!-- Notification 4-->
+        <div
+          class="notification notification__read hover:cursor-pointer rounded-lg py-3 px-6 flex gap-4 items-start"
+        >
+          <img
+            class="w-10 h-10"
+            src="images/avatar-rizky-hasanuddin.webp"
+            alt="user profile picture"
+          />
+          <div class="text-grayishBlue">
+            <p class="notification__text">
+              <em
+                class="not-italic font-bold text-veryDarkBlue hover:text-midnightBlue"
+                >Rizky Hasanuddin</em
+              >
+              sent you a private message
+            </p>
+            <p class="">5 days ago</p>
+            <p
+              class="p-3 border-2 mt-2 hover:bg-lightGrayishBlue hover:text-darkGrayishBlue"
+            >
+              Hello, thanks for setting up the Chess club. I've been a member
+              for a few weeks now and I'm already having lots of fun and
+              improving my game.
+            </p>
+          </div>
+        </div>
+
+        <!-- Notification 5-->
+        <div
+          class="notification notification__read hover:cursor-pointer rounded-lg py-3 px-6 flex gap-4 items-center justify-between"
+        >
+          <div class="flex gap-4 items-center">
+            <img
+              class="w-10 h-10"
+              src="images/avatar-kimberly-smith.webp"
+              alt="user profile picture"
+            />
+            <div class="text-grayishBlue">
+              <p class="notification__text">
+                <em
+                  class="not-italic font-bold text-veryDarkBlue hover:text-midnightBlue"
+                  >Kimberly Smith</em
+                >
+                commented on your picture
+              </p>
+              <p class="">1 week ago</p>
+            </div>
+          </div>
+          <img
+            class="h-10 w-10"
+            src="images/image-chess.webp"
+            alt="image chess"
+          />
+        </div>
+
+        <!-- Notification 6-->
+        <div
+          class="notification notification__read hover:cursor-pointer rounded-lg py-3 px-6 flex gap-4 items-start"
+        >
+          <img
+            class="w-10 h-10"
+            src="images/avatar-nathan-peterson.webp"
+            alt="user profile picture"
+          />
+          <div class="text-grayishBlue">
+            <p class="notification__text">
+              <em
+                class="not-italic font-bold text-veryDarkBlue hover:text-midnightBlue"
+                >Nathan Peterson</em
+              >
+              reacted to your recent post
+              <em class="not-italic font-bold text-darkGrayishBlue">
+                5 end-game strategies to increase your win rate</em
+              >
+            </p>
+            <p class="">2 weeks ago</p>
+          </div>
+        </div>
+
+        <!-- Notification 7-->
+        <div
+          class="notification notification__read hover:cursor-pointer rounded-lg py-3 px-6 flex gap-4 items-start"
+        >
+          <img
+            class="w-10 h-10"
+            src="images/avatar-anna-kim.webp"
+            alt="user profile picture"
+          />
+          <div class="text-grayishBlue">
+            <p class="notification__text">
+              <em
+                class="not-italic font-bold text-veryDarkBlue hover:text-midnightBlue"
+                >Anna Kim</em
+              >
+              left the group
+              <em class="not-italic font-bold text-midnightBlue">
+                Chess Club</em
+              >
+            </p>
+            <p class="">2 weeks ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
